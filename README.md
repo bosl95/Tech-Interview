@@ -3,7 +3,9 @@
 ## JAVA
 
 <details>
-<summary>Stream</summary>
+<summary>Stream이란?</summary>
+
+<br>
 
 - 선언형 방식으로 컬렉션의 데이터를 조작하는 API
 - 외부 반복을 통해 작업하는 컬렉션과 달리 내부 반복을 통해 작업 수행
