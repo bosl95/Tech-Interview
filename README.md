@@ -44,7 +44,7 @@
 <br>
 
 - 함수를 변수처럼 사용하는 것.
-- 익명 클래스 메서드를 단순화 
+- 익명 클래스 메서드를 단순화하여 클래스를 생성하지 않는다.
   - 익명 클래스 : 클래스 정의와 동시에 객체를 생성하는 클래스
     ```java
     Pomo pomo = new Pomo() {
@@ -65,6 +65,71 @@
 
 <br>
 
+<details>
+<summary>Java8에 추가된 기능</summary>
+
+<br>
+
+- 함수형 프로그래밍을 지원 (stream, lambda)
+- LocalDate, LocalDateTime 클래스 
+- 인터페이스의 default 메서드
+- Optional
+
+---
+
+</div>
+</details>
+
+<br>
+
+<details>
+<summary>Map vs FlatMap</summary>
+
+<br>
+
+- map : 단일 스트림 안의 요소를 원한느 특정 형태로 변환 시켜주는 중간 연산 메서드
+- flatmap : 요소가 리스트일 때 각 리스트의 모든 원소를 특정 형태로 변환하고 단일 원소 스트림으로 반환시켜주는 중간 메서드
+
+---
+
+</div>
+</details>
+
+<br>
+
+<details>
+<summary>String/StringBuilder/StringBuffer</summary>
+
+<br>
+
+| String | StringBuffer | StringBuilder |
+|---|---|---|
+|불변|가변|가변|
+| | 많은 문자열 연산 시 효율적 | 많은 문자열 연산시 효율적|
+| | equals 메서드 오버라이딩 X | StringBuffer - 스레드 동기화 기능 |
+
+- 스레드 동기화를 뺀 StringBuilder의 성능이 더 빠르다.
+
+
+---
+
+</div>
+</details>
+
+<br>
+
+<details>
+<summary>HashMap/HashTable/ConcurrentHashMap</summary>
+
+<br>
+
+
+---
+
+</div>
+</details>
+
+<br>
 
 
 <br>
