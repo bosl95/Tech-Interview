@@ -105,11 +105,10 @@
 | String | StringBuffer | StringBuilder |
 |---|---|---|
 |불변|가변|가변|
-| | 많은 문자열 연산 시 효율적 | 많은 문자열 연산시 효율적|
-| | equals 메서드 오버라이딩 X | StringBuffer - 스레드 동기화 기능 |
+| - | 많은 문자열 연산 시 효율적 | 많은 문자열 연산시 효율적|
+| - | equals 메서드 오버라이딩 X | StringBuffer - 스레드 동기화 기능 |
 
 - 스레드 동기화를 뺀 StringBuilder의 성능이 더 빠르다.
-
 
 ---
 
@@ -122,6 +121,20 @@
 <summary>HashMap/HashTable/ConcurrentHashMap</summary>
 
 <br>
+
+- Map 인터페이스로 구현한 구현체로 key:value 구조를 가진다.
+
+<br>
+
+**Thread-Safe**
+
+| HashMap | HashTable | ConcurrentHashMap |
+|---|---|---|
+| `synchronized` 키워드가 없어 thread-safe X | `synchronized` 키워드가 있어 thread-safe O | `synchronized` 키워드가 없지만 thread-safe O |
+| null 허용 | null 허용 X | null 허용 X |
+
+
+- 찾고자 하는 버킷 접근 시 모든 버킷을 잠그는 HashTable과 달리 ConcurrentHashMap은 해당 해시 버킷만을 잠금
 
 
 ---
