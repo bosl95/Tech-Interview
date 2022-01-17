@@ -144,5 +144,45 @@
 
 <br>
 
+<details>
+<summary>JVM 메모리 구조</summary>
+
+<br>
+
+- JVM 내에 있는 클래스 로더가 런타임 데이터 영역으로 바이트 코드 파일 적재
+
+**Runtime Data Aread**
+
+| method(static 영역) | Heap | Stack | PC(Program counter ) | native method stack |
+|:--:|:--:|:--:|:--:|:--:|
+| 클래스 수준 정보, static 데이터 | GC 대상이 되는 new를 통해 생성되는 객체와 배열 저장 | 메서드 스택 프레임 생성 영역 | native가 붙어있고, c/c++로 돌아가는 콜 스택 |
+| 스레드 공유 자원 O | 스레드 공유 자원 O | 스레드 공유 자원 X | - | JNI를 호출해 메서드 실행 |
+
+- JIT 컴파일러 : 바이트 코드 전체 -> 컴파일 -> 바이너리 코드, 인터프리팅 하지 않고 바이너리 코드 실행
+
+---
+
+</div>
+</details>
+
+<br>
+
+<details>
+<summary>자바 프로그래밍 동작 과정</summary>
+
+<br>
+
+1. .java -> (컴파일러 `javac`) -> .class(바이트코드) 변환 (JVM을 위한 기계어로 변환)
+2. JVM 내에 있는 클래스 로더가 런타임 데이터 영역으로 바이트 코드 파일 적재
+  - Loading(클래스 읽기) -> Linking(레퍼런스 연결) -> initializing(정적 변수 초기화, 할당)
+3. JVM 내에 있는 실행 엔진(interpreter, JIT compiler, GC)이 런타임 데이터 영역에 적재된 바이트 코드를 기계어로 변경해 명령어 단위로 실행.
+  - 인터프리팅은 기계어로 변환하는 즉, 플랫폼에 종속되지 X
+
+---
+
+</div>
+</details>
+
+<br>
 
 <br>
