@@ -251,5 +251,24 @@
 
 <br>
 
+<details>
+<summary>Reflection</summary>
+
+<br>
+
+- 클래스 로더에 의해 Method 영역에 로딩되어있는 클래스 메타데이터를 이용해 해당 클래스의 인스턴스를 생성하거나 멤버에 접근할 수 있도록 도와주는 자바 API
+- ex. ComponentScan, DinamicProxy
+
+**주의할 점**
+- 성능 이슈 : ComponentScan처럼 한번만 되는 경우에만 사용
+- 런타임 시에만 발생하는 문제를 만들 가능성이 있다.
+- 접근 지시자를 의도적으로 무시할 수 있어 보안적 이슈
+
+---
+
+</div>
+</details>
+
+<br>
 
 <br>
