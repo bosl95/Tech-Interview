@@ -302,4 +302,19 @@
 
 <br>
 
+<details>
+<summary>해시 충돌</summary>
+
+<br>
+
+- java7까지는 LinkedList를 이용한 sepereate chaining
+- java8부터 linked list와 red black tree 혼용 (임계치를 넘어가면 변경)
+
+---
+
+</div>
+</details>
+
+<br>
+
 <br>
