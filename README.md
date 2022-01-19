@@ -286,4 +286,20 @@
 
 <br>
 
+<details>
+<summary>Thread-Safe</summary>
+
+<br>
+
+- 여러 스레드로부터 동시 접근이 이루어져도 프로그램 실행에 문제가 없다.
+- `synchronized` 키워드, `ConcurrentHashMap` 등
+- Lock이나 세마포어를 걸어 1공유자원 1접근 혹은 Thread-Local로 동시 접근을 막거나 불변 객체로 값을 변경할 수 없도록 막는다.
+
+---
+
+</div>
+</details>
+
+<br>
+
 <br>
