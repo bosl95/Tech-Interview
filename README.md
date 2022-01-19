@@ -203,4 +203,26 @@
 
 <br>
 
+<details>
+<summary>Checked Exception vs Unchecked Exception</summary>
+
+<br>
+
+| checked | unchecked | 
+|---|---|
+| 별도의 예외 처리를 하지 않으면 컴파일 단계에서 오류 발생 (비관적 예외 처리 기법) | 별도의 예외 처리를 하지 않아도 컴파일 단계에서 오류 발생 X (낙관적 예외 처리 기법) |
+| SQL Exception, IOException | NPE, RuntimeException |
+
+
+**checkd exception을 지양하는 이유?**
+- OCP 위반 : 모든 상위 메서드들이 최하위 메서드의 예외 시그니처를 알아야하므로 캡슐화 X
+- depth가 깊어지면 예외 발생 근원도 알기 어렵다.
+
+---
+
+</div>
+</details>
+
+<br>
+
 <br>
