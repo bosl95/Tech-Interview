@@ -341,5 +341,34 @@
 </details>
 
 <br>
+<br>
+
+## DATABASE
+
+<details>
+<summary> 격리 수준 </summary>
+
+<br>
+
+**Read Uncommited**
+- 아직 커밋중인 데이터를 다른 트랜잭션이 읽는 것을 허용
+
+**Read Commited**
+- 커밋된 데이터를 다른 트랜잭션이 읽는 것을 허용
+
+**Repeatable Read - MYSQL**
+- 처음 읽기 시점을 기억하여 도중 다른 트랜잭션이 커밋되어도 읽는 값에 변화되지 않음을 보장
+  - Phantom Read 
+    - 한 트랜잭션 중간에 insert를 발생시키는 트랜잭션이 발생
+    - 현 트랜잭션이 update를 하게 될 경우 일관되지 않은 결과가 발생
+
+**Serializable**
+- 다른 트랜잭션 접근 불가
+
+---
+
+</div>
+</details>
+
 
 <br>
