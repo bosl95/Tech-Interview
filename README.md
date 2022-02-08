@@ -370,5 +370,20 @@
 </div>
 </details>
 
+<br>
 
+<details>
+<summary> 트랜잭션 vs @Transactional </summary>
+
+<br>
+
+- 트랜잭션 : 데이터베이스의 상태를 변화시키기 위해 수행하는 작업의 단위
+- @Transactional : 애플리케이션 단의 트랜잭션. 비즈니스 로직을 수행하는 트랜잭션
+
+---
+
+</div>
+</details>
+
+<br>
 <br>
