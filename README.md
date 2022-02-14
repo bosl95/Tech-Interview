@@ -386,4 +386,29 @@
 </details>
 
 <br>
+
+<details>
+<summary> Connection Pool </summary>
+
+<br>
+
+- DB와 연결된 Connection을 미리 만들어 Pool 속에 저장 => 필요한 경우 Connection을 Pool에서 꺼내 쓰고 다시 반환
+- Connection은 인증 과정으로 인한 생성 비용이 크고, 매 생성마다 메모리를 사용하기 때문에 connection 수를 제어하지 않는 경우 메모리 부족 현상이 발생할 수 있다.
+- Connection Pool을 이용해 미리 연결된 스레드 풀을 이용해 connection 개수를 관리하고 연결 비용과 메모리 부족 문제를 해결한다.
+
+### 동작 과정
+
+1. 어플리케이션 실행
+2. DB와 연결된 Connection 객체들을 미리 생성해 Pool에 저장
+  - DB와 Connection을 맺어놓고 있는다.
+3. DB 요청 시 Pool에 저장된 Connection 객체를 가져와 DB에 접근
+4. 처리가 끝나면 다시 Pool에 Connnection 객체를 반납
+
+---
+
+</div>
+</details>
+
+<br>
+
 <br>
