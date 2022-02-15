@@ -411,4 +411,19 @@
 
 <br>
 
+<details>
+<summary> FailOver </summary>
+
+<br>
+
+- MHA(Master High Availiability) 사용
+  - Master DB 장애 발생 시 자동으로 failover를 수행하여 Slave DB를 Master DB로 승격시켜 서비스 다운 타임을 최소화하는 솔루션
+
+---
+
+</div>
+</details>
+
+<br>
+
 <br>
