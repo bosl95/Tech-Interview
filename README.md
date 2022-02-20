@@ -476,4 +476,23 @@
 
 <br>
 
+<details>
+<summary> MVCC </summary>
+
+<br>
+
+- 하나의 레코드에 대해 2개의 버전 유지
+- 필요에 따라 어느 데이터가 보여지는 지 여러 상황에 따라 달라지는 구조
+- **잠금을 사용하지 않는 일관된 읽기 제공**
+- **[격리수준]Uncommited** : 변경된 데이터 상태 반환
+- **[격리수준]Commited 이상** : undo 영역의 데이터 반환
+- commit 시 버퍼풀의 내용을 영속화 / rollback 시 undo 영역으로 복구
+
+---
+
+</div>
+</details>
+
+<br>
+
 <br>
