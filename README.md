@@ -340,6 +340,24 @@
 </div>
 </details>
 
+<details>
+<summary>정적/동적 바인딩</summary>
+
+<br>
+
+- 바인딩 : 프로그램 구성 요소의 성격을 결정
+- 정적 바인딩 : 컴파일 타임에 성격이 결정
+  - C, C++, JAVA
+- 동적 바인딩 : 다형성을 사용해 메서드를 호출할 때 발생하는 현상. 런타임에 성격이 결정
+  - python, kotlin
+
+---
+
+</div>
+</details>
+
+<br>
+
 <br>
 <br>
 
