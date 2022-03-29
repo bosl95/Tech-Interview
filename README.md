@@ -361,6 +361,28 @@
 <br>
 <br>
 
+## Spring
+
+<details>
+<summary>빈 생명 주기</summary>
+
+<br>
+- 빈 인스턴스화 및 의존성 주입
+- 스프링 인지 검사 (빈이 application context를 알아야하는 경우)
+- 빈 생성 콜백 메서드 호출
+- 빈 소멸 메서드 호출
+
+
+---
+
+</div>
+</details>
+
+<br>
+
+<br>
+<br>
+
 ## DATABASE
 
 <details>
