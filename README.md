@@ -340,6 +340,8 @@
 </div>
 </details>
 
+<br>
+
 <details>
 <summary>정적/동적 바인딩</summary>
 
@@ -350,6 +352,24 @@
   - C, C++, JAVA
 - 동적 바인딩 : 다형성을 사용해 메서드를 호출할 때 발생하는 현상. 런타임에 성격이 결정
   - python, kotlin
+
+---
+
+</div>
+</details>
+
+<br>
+
+<details>
+<summary>자바 프로그램 동작 과정</summary>
+
+<br>
+
+1. java -> (컴파일러 javac) -> 바이트코드(.class) 변환 (JVM을 위한 기계어 변환)
+2. JVM 내에 있는 클래스 로더가 런타임 데이터 영역으로 바이트 코드 파일 적재
+  - Loading (클래스 읽기) -> Linking(레퍼런스 연결) -> Initializaing (정적 변수 초기화, 할당)
+3. JVM 내에 있는 실행 엔진(Interpreter, JIT Compiler, GC)이 런타임 데이터 영역에 적재된 바이트 코드를 기계어로 변경해 명령어 단위로 실행
+  - 인터프리팅은 기계어로 변환하는 즉, 플랫폼 종속 X
 
 ---
 
