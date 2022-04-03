@@ -136,6 +136,15 @@
 
 - 찾고자 하는 버킷 접근 시 모든 버킷을 잠그는 HashTable과 달리 ConcurrentHashMap은 해당 해시 버킷만을 잠금
 
+<br>
+
+### 조회
+- HashMap : Hashing을 사용해 데이터를 저장하기 때문에 조회시 O(1)
+- TreeMap : Red-black 트리를 사용해 데이터를 저장하기 때문에 조회 시 O(logN)
+
+### 데이터 순서
+- HashMap : 순서 보장 X
+- TreeMap & LinkedHashMap : 순서 보장 O
 
 ---
 
