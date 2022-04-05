@@ -261,26 +261,6 @@
 <br>
 
 <details>
-<summary>Reflection</summary>
-
-<br>
-
-- 클래스 로더에 의해 Method 영역에 로딩되어있는 클래스 메타데이터를 이용해 해당 클래스의 인스턴스를 생성하거나 멤버에 접근할 수 있도록 도와주는 자바 API
-- ex. ComponentScan, DinamicProxy
-
-**주의할 점**
-- 성능 이슈 : ComponentScan처럼 한번만 되는 경우에만 사용
-- 런타임 시에만 발생하는 문제를 만들 가능성이 있다.
-- 접근 지시자를 의도적으로 무시할 수 있어 보안적 이슈
-
----
-
-</div>
-</details>
-
-<br>
-
-<details>
 <summary>동기화/비동기화</summary>
 
 <br>
@@ -379,6 +359,48 @@
   - Loading (클래스 읽기) -> Linking(레퍼런스 연결) -> Initializaing (정적 변수 초기화, 할당)
 3. JVM 내에 있는 실행 엔진(Interpreter, JIT Compiler, GC)이 런타임 데이터 영역에 적재된 바이트 코드를 기계어로 변경해 명령어 단위로 실행
   - 인터프리팅은 기계어로 변환하는 즉, 플랫폼 종속 X
+
+---
+
+</div>
+</details>
+
+<br>
+
+<details>
+<summary>Reflection</summary>
+
+<br>
+
+- 클래스 로더에 의해 Method 영역에 로딩되어있는 클래스 메타데이터를 이용해 해당 클래스의 인스턴스를 생성하거나 멤버에 접근할 수 있도록 도와주는 자바 API
+- ex. ComponentScan, DinamicProxy
+
+**주의할 점**
+- 성능 이슈 : ComponentScan처럼 한번만 되는 경우에만 사용
+- 런타임 시에만 발생하는 문제를 만들 가능성이 있다.
+- 접근 지시자를 의도적으로 무시할 수 있어 보안적 이슈
+
+---
+
+</div>
+</details>
+
+<br>
+
+<details>
+<summary>다이나믹 프록시</summary>
+
+<br>
+
+<image src='./img/dynamic_proxy.jpg'>
+
+- 프록시 단점 : 모든 인터페이스 직접 구현, 부가 기능 코드 중복 가능성
+
+<br>
+
+### 다이나믹 프록시 
+- 모든 요청을 리플렉션 정보로 변환해 InvocationHandler 구현 객체의 invoke() 메서드로 위임하는 방식
+- 객체에 대한 Reflection을 사용하기 때문에 성능 하락의 원인이 됨.
 
 ---
 
@@ -487,6 +509,8 @@
 
 </div>
 </details>
+
+<br>
 
 <details>
 <summary> 트랜잭션 전파 속성 </summary>
@@ -675,7 +699,5 @@
 
 </div>
 </details>
-
-<br>
 
 <br>
