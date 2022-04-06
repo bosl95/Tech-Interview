@@ -409,6 +409,18 @@
 
 <br>
 
+<details>
+<summary>JDK Dynamic Proxy vs CGLIB</summary>
+
+<br>
+
+작성중 ....
+
+</div>
+</details>
+
+<br>
+
 <br>
 <br>
 
