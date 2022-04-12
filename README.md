@@ -1,5 +1,13 @@
 # 🔥 Tech-Interview
 
+## INDEX
+
+- [JAVA](#JAVA)
+- [SPRING](#SPRING)
+- [DATABASE](#DATABASE)
+
+---
+
 ## JAVA
 
 <details>
