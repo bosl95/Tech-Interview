@@ -726,3 +726,17 @@
 <br>
 
 ## KOTLIN
+
+<details>
+<summary> val, var의 차이점 </summary>
+
+<br>
+
+var은 일반적인 변수로, 여러번 할당될 수 있는 변경가능한(mutable) 변수이다.
+val은 정적인 변수로 한번만 초기화할 수 있고 변경불가능한(immutable) 변수이다.
+
+
+</div>
+</details>
+
+<br>
