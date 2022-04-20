@@ -558,8 +558,6 @@
 
 <br>
 
-<br>
-
 <details>
 <summary> 트랜잭션 vs @Transactional </summary>
 
